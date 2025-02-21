@@ -1,0 +1,90 @@
+[
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Java/main/Blackjack_Game/Project/blackTried999/src/images/background/background.jpg",
+        "subtitle": "Juego",
+        "title": "21 Blackjack",
+        "desc": "Cree una aplicación que simula el famoso juego de casino 21 Blackjack usando Java con ayuda de Swing para la creación de la UI. Para los tests y debug del juego usé JUnit.",
+        "tags": ["JAVA", "Swing", "JUnit", "UI/UX", "Juego"],
+        "git_link": "https://github.com/Dani19866/Java/tree/main/Blackjack_Game"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/university_web_app.png",
+        "subtitle": "Aplicación WEB",
+        "title": "Aplicación WEB para la Universidad",
+        "desc": "Esta aplicación fue creada entre unos compañeros y mi persona para la universidad con el propósito de crear y organizar las distintas agrupaciones existentes.",
+        "tags": ["React", "UML", "Firebase", "Vercel", "UI/UX", "JavaScript", "Tailwind", "CSS", "App"],
+        "git_link": "https://github.com/CBastidas707/sistema-info"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/kraken_fuzz_app.png",
+        "subtitle": "Herramienta",
+        "title": "Fuzz script V2",
+        "desc": "Esta herramienta la cree con el propósito de mejorar en la área de seguridad. Esta herramienta escanea cualquier web en busca de rutas y archivos de difícil visualización.",
+        "tags": ["Python", "Seguridad", "Script", "Tests", "Pentesting", "Herramienta"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/fuzzing_script_2"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/bingo.png",
+        "subtitle": "Juego",
+        "title": "Bingo multijugador",
+        "desc": "Esto fue un microproyecto que hice cuando cursé la materia de sistemas de información. Contiene funciones de localstorage, contador de puntos, multijugador, etc.",
+        "tags": ["Juego", "JavaScript", "UI/UX", "CSS"],
+        "git_link": "https://github.com/Dani19866/MICROPROYECTO-01/tree/main"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/lyra.png",
+        "subtitle": "Aplicación Desktop",
+        "title": "Software administrativo",
+        "desc": "Este es un software hecho a medida que está en proceso de desarrollo. Es para la compañía Santos y Santos C.A. el cual estuve haciendo prototipos para los requisitos solicitados.",
+        "tags": ["JAVA", "MongoDB", "UI/UX", "Seguridad", "App"],
+        "git_link": "https://github.com/Dani19866/Java/tree/main/Enterprise_Software"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/grafo.png",
+        "subtitle": "Aplicación Desktop",
+        "title": "Grafo. Estructura de datos",
+        "desc": "Esta aplicación muestra visualmente la construcción de un grafo con sus vértices, aristas y peso. También incluye funciones como la búsqueda por DFS y BFS, agregar vértices y aristas, etc.",
+        "tags": ["Estructura", "UI/UX", "JAVA", "App"],
+        "git_link": "https://github.com/Dani19866/Java/tree/main/Graph_and_Networks"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/python_menu_2.png",
+        "subtitle": "Aplicación Desktop",
+        "title": "Menu interactivo",
+        "desc": "Este proyecto es un CRUD en Python el cual tiene incorporada funciones con los paquetes requests y os. Esta aplicación es capaz de tolerar la mayoría de los errores.",
+        "tags": ["Python", "Requests", "Archivos", "JSON", "App"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/simple_menu_management_01-2023"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/python_menu_1.png",
+        "subtitle": "Aplicación Desktop",
+        "title": "Menu interactivo",
+        "desc": "Este proyecto es un CRUD en Python el cual tiene incorporada funciones con los paquetes requests, os y matplotlib. Es una versión mejorada del anterior proyecto ya que me pagaron.",
+        "tags": ["Python", "Requests", "Archivos", "JSON", "Matplotlib", "App"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/simple_menu_management_03-2023"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/inyection.jpg",
+        "subtitle": "Herramienta",
+        "title": "Script para pentesting",
+        "desc": "Este script contiene multiples funciones y características automáticas para la seguridad y el análisis WEB y WPA. Contiene ataques automáticos de fuerza bruta, inyección SQL, scraping web, etc.",
+        "tags": ["Seguridad", "Python", "SQLi", "Scraping", "WPA", "Pentesting", "Herramienta"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/sqli_script"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/powershell.png",
+        "subtitle": "Herramienta",
+        "title": "Powershell",
+        "desc": "Es un proyecto en GitHub donde comparto mis cheatsheets que uso para algunas aplicaciones, por ejemplo, la app administrativa utiliza powershell para algunos procesos de descarga.",
+        "tags": ["Powershell", "Herramienta"],
+        "git_link": "https://github.com/Dani19866/Powershell"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/wordlist.png",
+        "subtitle": "Herramienta",
+        "title": "WordList para servicios",
+        "desc": "Este es un proyecto el cual con ayuda de una IA construyo lo necesario para crear un servicio falso para pentesting. Esto intenta suplantar nombres conocidos en el sistema.",
+        "tags": ["Pentesting", "Herramienta"],
+        "git_link": "https://github.com/Dani19866/WordLists"
+    }
+]

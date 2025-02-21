@@ -1,0 +1,34 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+    bg: ImageMetadata;
+    alt: string;
+    objectForm?: string;
+}
+const { title, subtitle, bg, alt, objectForm } = Astro.props;
+
+// Components
+import Image from "astro/components/Image.astro";
+
+// Cambiar dinámicamente "object-cover" si existe "objectForm"
+const imageDimension = `h-96 w-full ${objectForm ? objectForm : 'object-cover'}`;
+---
+<div class="h-96">
+    <!-- Header | Background -->
+    <div class="relative">
+        <!-- Header -->
+        <div class="w-full h-fit absolute z-10 top-0 bottom-0 my-auto px-5 lg:px-20">
+            <div class="h-full flex flex-col p-4 text-white">
+                <h1 class="text-5xl md:text-6xl font-extrabold">{title}</h1>
+                <h2>{subtitle}</h2>
+            </div>
+        </div>
+
+        <!-- Background -->
+        <div class="relative">
+            <div class="absolute h-full w-full bg-black opacity-50"></div>
+            <Image class={imageDimension} src={bg} alt={alt}/>
+        </div>
+    </div>
+</div>

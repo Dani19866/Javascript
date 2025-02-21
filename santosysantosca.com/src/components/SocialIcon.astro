@@ -1,0 +1,16 @@
+---
+interface Props {
+	src: ImageMetadata;
+	alt: any;
+	classImage?: string;
+}
+const { src, alt, classImage } = Astro.props;
+
+// Components
+import Image from "astro/components/Image.astro";
+
+// Cambiar dináminacamente el atributo "class"
+const classImageAux = `${classImage ? classImage : "h-6 w-6"}`
+---
+
+<Image src={src} alt={alt} class={classImageAux}/>

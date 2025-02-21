@@ -1,0 +1,28 @@
+---
+interface Props {
+    name: string;
+    zone: string;
+    phone: string;
+    image: ImageMetadata;
+}
+const { name, zone, phone, image } = Astro.props
+
+
+// Assets
+import SocialIcon from './SocialIcon.astro';
+---
+
+<!-- Card -->
+<div class="max-w-96 w-fit flex flex-row gap-x-5 h-16">
+    <!-- Image -->
+    <div class="">
+        <SocialIcon src={image} alt="Imagen que muestra la cara del vendedor" classImage="w-16 h-full rounded-full"/>
+    </div>
+
+    <!-- Info -->
+    <div class="flex flex-col justify-between h-full">
+        <h2 class="size-s-4-2 font-medium">{name}</h2>
+        <h3 class="primary-text">{zone}</h3>
+        <span>{phone}</span>
+    </div>
+</div>

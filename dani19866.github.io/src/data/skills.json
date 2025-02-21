@@ -1,0 +1,180 @@
+[
+    {
+        "img_link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=6e14bd5037d06f089b8ec6291ecbb43d2e1ff8444d0b057a5f47d3c103c208a8&ipo=images",
+        "skill": "Python",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F001%2F416%2F705%2Fnon_2x%2Fhtml5-emblem-orange-shield-and-white-text-vector.jpg&f=1&nofb=1&ipt=4e7d407f5b41600eded7c6205d6a7a5e92dffce4ae5af243756788f99e9ecdc1&ipo=images",
+        "skill": "HTML5",
+        "tags": ["Lenguaje de etiquetado"]
+    },
+    {
+        "img_link": "https://cdn.icon-icons.com/icons2/1826/PNG/512/4202020css3htmllogosocialsocialmedia-115668_115633.png",
+        "skill": "CSS3",
+        "tags": ["Lenguaje de estilo"]
+    },
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrewqj59Kr5K8cjiEMTg0ufRgWgNBtL1keTzmwSE3I6A&s",
+        "skill": "PHP",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png",
+        "skill": "Go",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://pbs.twimg.com/media/EUXTLf8XYAEjUgi.png",
+        "skill": "C#",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+        "skill": "Java",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        "skill": "JavaScript",
+        "tags": ["Lenguaje de programación"]
+    },
+    {
+        "img_link": "https://w7.pngwing.com/pngs/758/653/png-transparent-sql-computer-icons-symbol-miscellaneous-text-logo.png",
+        "skill": "SQL",
+        "tags": ["Lenguaje de consulta"]
+    },
+
+    
+    {
+        "img_link": "https://static-00.iconduck.com/assets.00/react-icon-2048x2048-o8k3ymqa.png",
+        "skill": "React",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://avatars.githubusercontent.com/u/44914786?s=280&v=4",
+        "skill": "Astro",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://miro.medium.com/v2/resize:fit:500/1*AbiX4LwtSNozoyfypcKvEg.png",
+        "skill": "Spring",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png",
+        "skill": "Spring boot",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://avatars.githubusercontent.com/u/67109815?s=280&v=4",
+        "skill": "Tailwind",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06oPSMQVk54_6uDwITQZ--xZagC2ncSGVAKsXvVJ1ww&s",
+        "skill": "Bootstrap",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://cdn.worldvectorlogo.com/logos/fastapi.svg",
+        "skill": "FastAPI",
+        "tags": ["Framework"]
+    },
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png",
+        "skill": "Laravel",
+        "tags": ["Framework"]
+    },
+    
+    {
+        "img_link": "https://cdn.goconqr.com/uploads/slide_property/image/735278/desktop_a2ab7898-7965-49a8-a47f-de4c93be620f.jpg",
+        "skill": "OpenUP",
+        "tags": ["Gerencia de proyectos"]
+    },
+    {
+        "img_link": "https://www.cognodata.com/wp-content/uploads/2019/04/Screenshot-2019-07-18-at-13.37.37-min.png",
+        "skill": "Agile",
+        "tags": ["Gerencia de proyectos"]
+    },
+    {
+        "img_link": "https://user-images.githubusercontent.com/68760595/164306020-120e8664-cb5b-459a-80a3-99e13b057b52.png",
+        "skill": "Scrum",
+        "tags": ["Gerencia de proyectos"]
+    },
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfepry2yF8I1V7acbLmW1PNGiv3qSeZy7S1GmMoaqjw&s",
+        "skill": "UML",
+        "tags": ["Gerencia de proyectos"]
+    },
+    {
+        "img_link": "https://railsware.com/blog/wp-content/uploads/2018/05/Icon.png",
+        "skill": "Testing QA",
+        "tags": ["Gerencia de proyectos"]
+    },
+
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ReeKC3moSl9m3v8MTAffLyt_94waKGE44O5BvdoPdg&s",
+        "skill": "Firebase",
+        "tags": ["SMBD"]
+    },
+    {
+        "img_link": "https://seeklogo.com/images/M/mongodb-logo-D13D67C930-seeklogo.com.png",
+        "skill": "MongoDB",
+        "tags": ["SMBD"]
+    },
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
+        "skill": "PostgreSQL",
+        "tags": ["SMBD"]
+    },
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Aw3K18oRIbWstn7l35i-CZu2veh9ooS0RK3i-dTu9A&s",
+        "skill": "MySQL",
+        "tags": ["SMBD"]
+    },
+
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Linux_logo.jpg",
+        "skill": "Linux",
+        "tags": ["Sistema operativo"]
+    },
+    {
+        "img_link": "https://e7.pngegg.com/pngimages/545/964/png-clipart-windows-multipoint-server-windows-server-2012-microsoft-computer-servers-microsoft-computer-logo-thumbnail.png",
+        "skill": "Windows Server",
+        "tags": ["Sistema operativo"]
+    },
+
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/1158px-Apache_Feather_Logo.svg.png",
+        "skill": "Apache",
+        "tags": ["Servidor"]
+    },
+    {
+        "img_link": "https://www.svgrepo.com/show/373924/nginx.svg",
+        "skill": "Nginx",
+        "tags": ["Servidor"]
+    },
+    {
+        "img_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
+        "skill": "IIS",
+        "tags": ["Servidor"]
+    },
+
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoaMPK33PASVO5z9i1SEXq6R_Hh9MwSIo2UAJcWZWQA&s",
+        "skill": "Arduino",
+        "tags": ["Electrónica"]
+    },
+
+    {
+        "img_link": "https://images.vexels.com/media/users/3/164648/isolated/preview/3b68a533d5e7a8d5e42a8c85428148d6-icono-de-idioma-de-la-bandera-de-estados-unidos.png",
+        "skill": "Inglés B2",
+        "tags": ["Idioma"]
+    },
+    {
+        "img_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlA9b_jhtl4aw5zoTD1iE5oL81OI0r1YHEN8scOHEZw&s",
+        "skill": "Portugués B2",
+        "tags": ["Idioma"]
+    }
+]

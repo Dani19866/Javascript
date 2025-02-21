@@ -1,0 +1,32 @@
+---
+// Database
+import { databaseProducts } from "../../../data/products";
+
+// Components
+import ProductLayout from "../../../components/ProductLayout.astro";
+
+// Dynamic page
+const { slug } = Astro.params;
+const product = databaseProducts.find((p) => p.slug === slug);
+
+export function getStaticPaths() {
+    return databaseProducts.map((product) => ({
+        params: { slug: product.slug },
+        props: product,
+    }));
+}
+
+if (!product) {
+    console.error(`Producto no encontrado para el slug: ${slug}`);
+    throw new Error(`Producto no encontrado para el slug: ${slug}`);
+}
+---
+
+<ProductLayout
+    titlePage={product.titlePage}
+    descriptionPage={product.descriptionPage}
+    titleHeader={product.titleHeader}
+    imageHeader={product.imageHeader}
+    altImageHeader={product.altImageHeader}
+    products={product.products}
+/>

@@ -1,0 +1,32 @@
+{
+        "slug": "",
+        "titlePage": "",
+        "descriptionPage": "",
+        "titleHeader": "",
+        "imageHeader": IMAGEN_DEL_HEADER,
+        "altImageHeader": "nosemano",
+        "products": [
+            {
+                productName: "",
+                productResume: "",
+                productExamples: [
+                    "",
+                    ""
+                ],
+                productBenefits: [
+                    "",
+                    ""
+                ],
+                imageSpecificProduct: IMAGEN_DEL_PRODUCTO,
+                altImageSpecificProduct: "",
+                productInfo: [
+                    "",
+                    "",
+                    ""
+                ],
+                sizes: [
+                    ["", "", ""]
+                ]
+            }
+        ]
+    }

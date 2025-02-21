@@ -1,0 +1,59 @@
+---
+interface Props {
+    // For page
+    titlePage: string;
+    descriptionPage: string;
+
+    // For header
+    titleHeader: string;
+    imageHeader: ImageMetadata;
+    altImageHeader: string;
+
+    // All products
+    products: {
+        productName: string;
+        productResume: string;
+        productExamples: string[];
+        productBenefits: string[];
+        imageSpecificProduct: ImageMetadata;
+        altImageSpecificProduct: string;
+        productInfo: string[];
+        sizes: string[][];
+    }[];
+}
+const {
+    titlePage,
+    descriptionPage,
+    titleHeader,
+    imageHeader,
+    altImageHeader,
+    products,
+} = Astro.props;
+
+// Components
+import Layout from "../layouts/Layout.astro";
+import ProductHeader from "./ProductHeader.astro";
+import ProductExpose from "./ProductExpose.astro";
+
+const completeTitlePage = `${titlePage} | Metalúrgicas Santos y Santos CA `;
+---
+
+<Layout title={completeTitlePage} desc={descriptionPage}>
+    <ProductHeader title={titleHeader} src={imageHeader} alt={altImageHeader} />
+    <div class="lg:w-1/2 mx-auto">
+        {
+            products.map((product) => (
+                <ProductExpose
+                    productName={product.productName}
+                    productResume={product.productResume}
+                    productExamples={product.productExamples}
+                    productBenefits={product.productBenefits}
+                    imageSpecificProduct={product.imageSpecificProduct}
+                    altImageSpecificProduct={product.altImageSpecificProduct}
+                    productInfo={product.productInfo}
+                    sizes={product.sizes}
+                />
+            ))
+        }
+    </div>
+</Layout>

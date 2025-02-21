@@ -1,0 +1,57 @@
+---
+import "../styles/main.css";
+import "../styles/palette.css";
+import "../styles/sizes.css";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+	title: string;
+	desc: string;
+}
+const { title, desc } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- SEO -->
+		<title>{title}</title>
+		<meta name="description" content={desc} />
+
+		<!-- CDN -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+
+		<!-- Prefetch -->
+		<link rel="prefetch" href="/products" />
+		<link rel="prefetch" href="/contact" />
+		<link rel="prefetch" href="/location" />
+
+		<!-- Google Search Console -->
+		
+
+		<!-- Google analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-68NME2GXHL"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-68NME2GXHL');
+		</script>
+	</head>
+
+	<body>
+		<Navbar />
+		<slot />
+		<Footer />
+	</body>
+	
+</html>

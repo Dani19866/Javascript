@@ -1,0 +1,47 @@
+---
+interface Props {
+    name: string;
+    dutty: string;
+    number: string;
+    email: string;
+}
+const {name, dutty, number, email} = Astro.props;
+
+// Components
+import Image from "astro/components/Image.astro";
+
+// Assets
+import phone from "../assets/svg/phone.svg";
+import mail from "../assets/svg/mail.svg";
+---
+
+<div class="m-2 p-2 inline-flex flex-col gap-5">
+    <!-- Heading -->
+    <div class="flex flex-col gap-2">
+        <h2 class="size-s-4-2 font-bold">{name}</h2>
+        <h3 class="primary-text">{dutty}</h3>
+    </div>
+
+    <!-- Info phone -->
+    <div class="flex flex-row w-fit gap-2 neutral-two-text">
+        <div class="w-fit">
+            <Image src={phone} alt="Ícono de teléfono para mostrar el número" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <p>+58 {number}</p>
+            <p>Lunes-Viernes 7am-5pm</p>
+        </div>
+    </div>
+
+    <!-- Info mail-->
+    <div class="flex flex-row w-fit gap-2 neutral-two-text">
+        <div class="w-fit">
+            <Image src={mail} alt="Ícono de correo para mostrar el email" />
+        </div>
+
+        <div class="flex align-middle items-center">
+            <p>{email}</p>
+        </div>
+    </div>
+</div>

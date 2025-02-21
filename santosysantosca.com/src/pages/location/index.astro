@@ -1,0 +1,52 @@
+---
+// Components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+
+// Assets
+import bg from "../../assets/bg/world.jpg";
+---
+
+<Layout
+    title="Ubicación | Metalúrgicas Santos y Santos CA"
+    desc="Encuentra la ubicación de Metalúrgicas Santos y Santos CA. Estamos en Venezuela, listos para ofrecerte productos de construcción y ferretería de alta calidad."
+>
+    <div class="w-full mb-2 mx-auto">
+        <!-- Header -->
+        <Header
+            title="Ubicación"
+            subtitle="Consulta nuestra dirección y localización en el mapa."
+            bg={bg}
+            alt="Imagen atractiva que expone la definición de ubicación"
+        />
+
+        <!-- Content 1 -->
+        <div class="flex flex-col lg:flex-row items-center m-4 lg:mx-8 gap-10 lg:justify-evenly"
+        >
+            <!-- Description -->
+            <div class="h-fit lg:w-[550px] flex flex-col gap-4">
+                <h2 class="primary-text size-s-3 font-extrabold">
+                    Araira, Miranda - Venezuela
+                </h2>
+                <h3 class="neutral-two-text">
+                    Continua por la intercomunal Guarenas - Guatire, para
+                    Araira. Llegando al arco de la entrada de Araira, continúe
+                    aprox. 30 metros hasta ver una <span class="font-bold"
+                        >bajada de tierra a mano izquierda</span
+                    >.
+                </h3>
+            </div>
+
+            <!-- Location -->
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5170.278390204145!2d-66.49549347790627!3d10.446192863000817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2ba928d3488897%3A0x92f76092e93a4653!2sGrupo%20Santos%20y%20Santos%20C.A.!5e1!3m2!1ses-419!2sus!4v1733866358431!5m2!1ses-419!2sus"
+                    class="w-[400px] lg:w-[600px] h-[450px]"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</Layout>

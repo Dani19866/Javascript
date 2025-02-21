@@ -1,0 +1,26 @@
+[
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Java/main/Blackjack_Game/Project/blackTried999/src/images/background/background.jpg",
+        "subtitle": "Juego",
+        "title": "21 Blackjack",
+        "desc": "Cree una aplicación que simula el famoso juego de casino 21 Blackjack usando Java con ayuda de Swing para la creación de la UI. Para los tests y debug del juego usé JUnit.",
+        "tags": ["JAVA", "Swing", "JUnit", "UI/UX"],
+        "git_link": "https://github.com/Dani19866/Java/tree/main/Blackjack_Game"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/university_web_app.png",
+        "subtitle": "Aplicación WEB",
+        "title": "Aplicación WEB para la Universidad",
+        "desc": "Esta aplicación fue creada entre unos compañeros y mi persona para la universidad con el propósito de crear y organizar las distintas agrupaciones existentes.",
+        "tags": ["React", "UML", "Firebase", "Vercel"],
+        "git_link": "https://github.com/CBastidas707/sistema-info"
+    },
+    {
+        "img_link": "https://raw.githubusercontent.com/Dani19866/Dani19866.github.io/main/assets/kraken_fuzz_app.png",
+        "subtitle": "Herramienta",
+        "title": "Imitación de la herramienta Fuzz",
+        "desc": "Esta herramienta la cree con el propósito de mejorar en la área de seguridad. Esta herramienta escanea cualquier web en busca de rutas y archivos de difícil visualización.",
+        "tags": ["Python", "Seguridad", "Script", "Tests"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/fuzzing_script_2"
+    }
+]

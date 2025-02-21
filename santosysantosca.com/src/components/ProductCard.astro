@@ -1,0 +1,30 @@
+---
+interface Props {
+    src: ImageMetadata;
+    alt: string;
+    title: string;
+    subtitle: string;
+    url: string
+}
+const { src, alt, title, subtitle, url } = Astro.props
+
+// Components
+import SocialIcon from "./SocialIcon.astro"
+---
+
+<div class="w-96 h-48 flex items-end">
+    <div id="container_product" class="w-96 h-44 flex items-end neutral-bg rounded-lg relative hover:bg-[#003D9D] hover:cursor-pointer hover:text-white">
+        <a href={url}>
+            <!-- Icon -->
+        <div id="" class="absolute h-12 w-12 primary-bg -top-6 left-0 right-0 mx-auto rounded-md">
+            <SocialIcon src={src} alt={alt} classImage="p-1"/>
+        </div>
+
+        <!-- Content -->
+        <div class="p-6 flex flex-col gap-2">
+            <h2 class="size-s-4-2 font-semibold text-center">{title}</h2>
+            <h3 class="size-s-5 text-center p-[1px] leading-6">{subtitle}</h3>
+        </div>
+        </a>
+    </div>
+</div>

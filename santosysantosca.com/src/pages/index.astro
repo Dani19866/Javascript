@@ -1,0 +1,316 @@
+---
+// Components
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Image from "astro/components/Image.astro";
+
+// Assets
+import root_content_1 from "../assets/root_content_1.jpg";
+import faq_arrow from "../assets/svg/down_faq.svg";
+
+const faqs = [
+	{
+		question:"¿Hacen envíos personalmente o tienes algún servicio de transporte?",
+		answer: "Dependiendo de la zona hacemos los envíos nosotros. Para otras zonas contactamos un servicio de transporte el cual el cliente paga un porcentaje (%) adicional en base a la factura.",
+	},
+	{
+		question: "¿Son fabricantes o distribuidores?",
+		answer: "Nosotros somos fabricantes, producimos la mayoría de productos que se encuentran en nuestra línea de productos. Presentamos algunos productos lo cuales somos distribuidores.",
+	},
+	{
+		question: "¿Dónde se encuentran ubicados?",
+		answer: "Estamos ubicados en Araira, Miranda, Venezuela. Llegando a Guatire se toma la vía para Araira pasando Intermarine, se va a presentar el arco el cual es la entrada a Araira, aproximadamente a 30 metros más adelante hay una bajada donde estamos ubicados.",
+	},
+	{
+		question: "¿Cómo puedo obtener un código de cliente?",
+		answer: "Nosotros no tenemos problema con vender a nuevos clientes. Cualquiera que esté interesado es bien recibido y despachado.",
+	},
+	{
+		question: "¿Tienen alguna red social donde publican novedades?",
+		answer: "Sí, contamos con una cuenta en Instagram donde publicamos novedades y productos: @santosysantosca.",
+	},
+	{
+		question: "¿Otorgan crédito?",
+		answer: "Solo a clientes frecuentes con larga trayectoria en la empresa. NO OTORGAMOS CRÉDITO A CLIENTES NUEVOS NI CON POCA TRAYECTORIA.",
+	},
+	{
+		question: "¿Otorgan descuentos?",
+		answer: "Dependiendo de la cantidad de productos, el monto y/o forma de pago, entregamos un descuento del 5% al 10%.",
+	},
+];
+---
+
+<Layout
+	title="Metalúrgicas Santos y Santos CA | Fabricantes de Productos de Construcción y Ferretería en Venezuela"
+	desc="Descubre Metalúrgicas Santos y Santos CA, líderes en la fabricación de materiales de construcción y ferretería en Venezuela. Más de 40 años de experiencia y calidad garantizada."
+>
+	<div class="flex gap-2 flex-col">
+		<!-- Content 1 -->
+		<section class="flex flex-col m-5 p-5 gap-4 xl:gap-x-40 lg:gap-x-16 lg:flex-row lg:justify-center" >
+			<!-- Image for mobile -->
+			<div class="lg:hidden">
+				<Image
+					class="rounded-xl"
+					src={root_content_1}
+					alt="Fabricación de materiales de construcción por Metalúrgicas Santos y Santos"
+					loading="lazy"
+				/>
+			</div>
+
+			<!-- Text -->
+			<div class="inter flex align-middle justify-center flex-col gap-4 lg:w-[634px] lg:h-[380px]" >
+				<!-- Title -->
+				<h1 class="text-4xl lg:text-6xl font-extrabold">
+					CONSTRUYENDO UN <span class="primary-text" >MEJOR FUTURO</span>
+				</h1>
+
+				<!-- Description -->
+				<p class="text-black leading-7">
+					Bienvenidos a <span class="font-bold">Metalúrgicas Santos y Santos</span>,
+					una fábrica con más de 40 años de experiencia en la
+					creación y fabricación de materiales de ferretería y
+					construcción. Desde nuestros inicios en Venezuela, en
+					Metalúrgicas Santos y Santos nos hemos comprometido a
+					fabricar y distribuir materiales de construcción y
+					ferretería de la más alta calidad, satisfaciendo las
+					necesidades de nuestros clientes y contribuyendo al
+					desarrollo de la industria de la construcción.
+				</p>
+			</div>
+
+			<!-- Image -->
+			<div class="hidden lg:flex items-center">
+				<Image
+					src={root_content_1}
+					alt="Fabricación de materiales de construcción por Metalúrgicas Santos y Santos"
+					class="rounded-xl lg:w-[350px] lg:h-[250px] xl:w-[450px] xl:h-[300px]"
+					loading="lazy"
+				/>
+			</div>
+		</section>
+
+		<!-- Content 2 -->
+		<section class="flex flex-col p-10 justify-center gap-4 neutral-bg">
+			<!-- Text -->
+			<div class="flex flex-col gap-2">
+				<h2 class="text-black inter font-extrabold text-4xl text-center lg:w-1/2 m-auto">
+					LAS FÁBRICAS, DISTRIBUIDORES Y FERRETERÍAS HAN CONFIADO EN
+					NOSOTROS
+				</h2>
+
+				<p class="text-[#363636] inter text-center">
+					Desde nuestros inicios nos hemos comprometido en entregar y
+					satisfacer las necesidades de nuestros clientes.
+				</p>
+			</div>
+
+			<!-- Stadistics -->
+			<div
+				class="inter flex flex-col lg:flex-row lg:p-10 lg:gap-32 align-middle justify-center gap-5"
+			>
+				<!-- 1 -->
+				<div class="text-center">
+					<h3 class="text-5xl font-extrabold primary-text">100%</h3>
+					<h4 class="secundary-text">Productos nacionales</h4>
+				</div>
+
+				<!-- 2 -->
+				<div class="text-center">
+					<h3 class="text-5xl font-extrabold primary-text">175</h3>
+					<h4 class="secundary-text">Productos</h4>
+				</div>
+
+				<!-- 3 -->
+				<div class="text-center">
+					<h3 class="text-5xl font-extrabold primary-text">+750</h3>
+					<h4 class="secundary-text">Clientes en todo el país</h4>
+				</div>
+			</div>
+		</section>
+
+		<!-- Content 3 -->
+		<section
+			class="flex flex-col m-5 p-5 lg:mx-40 xl:w-1/2 xl:m-auto xl:my-10 gap-10"
+		>
+			<!-- Description -->
+			<div>
+				<span class="text-base block text-center font-semibold primary-text">
+					NUESTRA HISTORIA
+				</span>
+				<h2 class="font-extrabold text-center text-4xl">
+					METALÚRGICAS SANTOS Y SANTOS
+				</h2>
+				<p class="text-black mt-4 leading-7">
+					<span class="font-semibold">Metalúrgicas Santos y Santos</span>
+					es una empresa fundada en 1988 con +35 años de experiencia
+					en el diseño, fabricación y distribución de materiales de ferretería
+					y construcción. Desde nuestros inicios, nos hemos comprometido
+					a entregar productos con la más alta calidad y con los mejores
+					diseños y acabados, satisfaciendo las necesidades de nuestros
+					clientes.
+				</p>
+				<p class="text-black mt-4 leading-7">
+					En <span class="font-semibold">Santos Y Santos</span> combinamos
+					tradición y tecnología para garantizar la durabilidad y eficiencia
+					de cada uno de nuestros productos, convirtiéndonos en un referente
+					de confianza en el mercado. Con un equipo dedicado y una visión
+					orientada al futuro, seguimos construyendo un legado de excelencia
+					y fiabilidad.
+				</p>
+			</div>
+
+			<!-- Mision | Vision -->
+			<div class="md:grid grid-cols-2 gap-10 flex flex-col">
+				<div class="flex flex-col align-middle items-center gap-4">
+					<p class="size-s-4 text-black text-opacity-60 text-center">
+						“Nuestra misión es entregar productos de alta calidad
+						satisfaciendo las necesidades del cliente.”
+					</p>
+
+					<div class="flex flex-row gap-2">
+						<p class="size-s-6">
+							<span class="font-medium">Antonio De Oliveira</span>
+							<span class="size-s-4-2 primary-text font-extrabold">/</span>
+							Director
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-col align-middle items-center gap-4">
+					<p class="size-s-4 text-black text-opacity-60 text-center">
+						“Nuestra visión es ser la empresa líder en fabricación y
+						distribución de productos de construcción y ferretería
+						en Venezuela.”
+					</p>
+
+					<div class="flex flex-row gap-2">
+						<p class="size-s-6">
+							<span class="font-medium">Daniel De Oliveira</span>
+							<span class="size-s-4-2 primary-text font-extrabold">/</span>
+							Gerente de Ventas
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Content 4 -->
+		<section class="flex flex-col p-10 neutral-bg">
+			<h2 class="font-extrabold text-center text-4xl">
+				PREGUNTAS FRECUENTES
+			</h2>
+
+			<div
+				class="border-t border-solid border-opacity-10 border-black p-4 mt-4 lg:w-1/2 m-auto"
+			>
+				{
+					faqs.map((faq, index) => (
+						<details class="group border border-gray-300 rounded-lg p-4">
+							<summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-800 group-open:text-blue-600">
+								{faq.question}
+								<span class="transition-transform duration-300 group-open:rotate-180">
+									<Image
+										src={faq_arrow}
+										alt="Imagen representativa para mostrar la respuesta"
+										loading="lazy"
+									/>
+								</span>
+							</summary>
+							<p class="mt-2 text-gray-600">{faq.answer}</p>
+						</details>
+					))
+				}
+			</div>
+		</section>
+	</div>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Metalúrgicas Santos y Santos CA",
+			"url": "https://santosysantosca.com",
+			"logo": "https://santosysantosca.com/assets/oldlogo.png",
+			"description": "Metalúrgicas Santos y Santos es una empresa líder en la fabricación de materiales de construcción y ferretería en Venezuela con más de 40 años de experiencia.",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Araira, Miranda",
+				"addressLocality": "Guatire",
+				"addressRegion": "Miranda",
+				"addressCountry": "VE"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+58-412-7050434",
+				"contactType": "Customer Service",
+				"availableLanguage": ["es"]
+			},
+			"sameAs": ["https://www.instagram.com/santosysantosca"]
+		}
+	</script>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "¿Hacen envíos personalmente o tienes algún servicio de transporte?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Dependiendo de la zona hacemos los envíos nosotros. Para otras zonas contactamos un servicio de transporte el cual el cliente paga un porcentaje (%) adicional en base a la factura."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Son fabricantes o distribuidores?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Nosotros somos fabricantes, producimos la mayoría de productos que se encuentran en nuestra línea de productos. Presentamos algunos productos lo cuales somos distribuidores."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Dónde se encuentran ubicados?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Estamos ubicados en Araira, Miranda, Venezuela. Llegando a Guatire se toma la vía para Araira pasando Intermarine..."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Cómo puedo obtener un código de cliente?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Nosotros no tenemos problema con vender a nuevos clientes. Cualquiera que esté interesado es bien recibido y despachado."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Tienen alguna red social donde publican novedades?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Sí, contamos con una cuenta en Instagram donde publicamos novedades y productos: @santosysantosca."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Otorgan crédito?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Solo a clientes frecuentes con larga trayectoria en la empresa. NO OTORGAMOS CRÉDITO A CLIENTES NUEVOS NI CON POCA TRAYECTORIA."
+					}
+				},
+				{
+					"@type": "Question",
+					"name": "¿Otorgan descuentos?",
+					"acceptedAnswer": {
+						"@type": "Answer",
+						"text": "Dependiendo de la cantidad de productos, el monto y/o forma de pago, entregamos un descuento del 5% al 10%."
+					}
+				}
+			]
+		}
+	</script>
+</Layout>

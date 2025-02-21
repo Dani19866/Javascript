@@ -1,0 +1,45 @@
+.primary-text {
+    color: #1E11D9;
+}
+
+.secundary-text {
+    color: #003D9D;
+}
+
+.tertiary-text {
+    color: #363636;
+}
+
+.neutral-text {
+    color: #F9FAFB;
+}
+
+.neutral-two-text {
+    color: #6B7280;
+}
+
+.primary-bg {
+    background-color: #1E11D9;
+}
+
+.secundary-bg {
+    background-color: #003D9D;
+}
+
+.tertiary-bg {
+    background-color: #363636;
+}
+
+.neutral-bg {
+    background-color: #F9FAFB;
+}
+
+.neutral-two-bg {
+    background-color: #6B7280;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

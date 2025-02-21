@@ -1,0 +1,70 @@
+---
+// Components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import ContactCard from "../../components/ContactCard.astro";
+
+
+// Assets
+import bg from "../../assets/bg/telephone.jpg";
+
+const contact = [
+    {
+        name: "Antonio",
+        dutty: "Director",
+        phone: "(414) 250-4328",
+        email: "antoniogruposantos@gmail.com",
+    },
+    {
+        name: "Daniel",
+        dutty: "Gerente de Ventas",
+        phone: "(412) 705-0434",
+        email: "deoliveiradaniel200@gmail.com",
+    },
+    {
+        name: "Carla",
+        dutty: "Administrador",
+        phone: "(412) 558-4531",
+        email: "carlasantiago1234@yahoo.com",
+    },
+    {
+        name: "Yaneth",
+        dutty: "Administrador",
+        phone: "(424) 185-1300",
+        email: "yanethbenose24@gmail.com",
+    },
+];
+---
+
+<Layout
+    title="Contacto | Metalúrgicas Santos y Santos CA"
+    desc="Contáctanos en Metalúrgicas Santos y Santos CA. Estamos a tu disposición para atender tus solicitudes y ofrecerte los mejores productos de construcción y ferretería en Venezuela."
+>
+    <div>
+        <!-- Header -->
+        <Header
+            title="Contacto"
+            subtitle="Toma nota de nuestros números telefónicos y correos electrónicos."
+            bg={bg}
+            alt="Imagen atractiva que expone la definición de ubicación"
+        />
+
+        <!-- Content 2 -->
+        <div
+            class="flex p-2 justify-center md:w-[650px] flex-wrap w-full my-10 mx-auto gap-6"
+        >
+            {
+                contact.map((card) => {
+                    return (
+                        <ContactCard
+                            name={card.name}
+                            dutty={card.dutty}
+                            number={card.phone}
+                            email={card.email}
+                        />
+                    );
+                })
+            }
+        </div>
+    </div>
+</Layout>

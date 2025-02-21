@@ -1,0 +1,134 @@
+---
+// Components
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import SocialIcon from "../../components/SocialIcon.astro";
+import ProductCard from "../../components/ProductCard.astro";
+
+// Assets
+import bg from "../../assets/bg/products.jpg";
+import hinge from "../../assets/icons/white_hinge.png"
+import threadedbar from "../../assets/icons/white_threaded_bars.png"
+import nuts from "../../assets/icons/white_nuts.png"
+import clamp from "../../assets/icons/white_clamp.png"
+import plate from "../../assets/icons/white_plate.png"
+import electricalpanel from "../../assets/icons/white_electrical-panel.png"
+import brickwall from "../../assets/icons/white_brickwall.png"
+import hook from "../../assets/icons/white_hook.png"
+import doorhandle from "../../assets/icons/white_handle.png"
+import washer from "../../assets/icons/white_washer.png"
+import presicion from "../../assets/icons/white_presicion.png"
+import cylinder from "../../assets/icons/white_cylinder.png"
+
+const products = [
+    {
+        url: "/products/bisagras",
+        image: hinge,
+        alt: "Icono de bisagra",
+        title: "Bisagras",
+        subtitle: "Bisagra armillar, bisagra para marco, bisagra pistón, bisagra para mueble, bisagra pistón y bisagra aldaba."
+    },
+    {
+        url: "/products/barras-roscadas",
+        image: threadedbar,
+        alt: "Icono de barra roscada",
+        title: "Barras roscadas",
+        subtitle: "Barras roscadas de 1 metro, barras roscadas de 2 metros."
+    },
+    {
+        url: "/products/tuercas",
+        image: nuts,
+        alt: "Icono de tuerca",
+        title: "Tuercas",
+        subtitle: "Tuercas para todas las medidas de las barras roscadas."
+    },
+    {
+        url: "/products/abrazaderas",
+        image: clamp,
+        alt: "Icono de abrazadera",
+        title: "Abrazaderas",
+        subtitle: "Abrazaderas EMT 1 pata, abrazadera EMT 2 patas, abrazadera para tubo de escape y abrazadera tipo “U”."
+    },
+    {
+        url: "/products/pletinas-perforadas",
+        image: plate,
+        alt: "Icono de pletina perforada",
+        title: "Pletinas perforadas",
+        subtitle: "Pletinas perforadas de 1 metro y pletinas perforadas de 2 metros."
+    },
+    {
+        url: "/products/cajetines-y-tapas",
+        image: electricalpanel,
+        alt: "Icono de cajetines",
+        title: "Cajetines y tapas",
+        subtitle: "Cajetines y tapas redondas, rectangulares y cuadradas."
+    },
+    {
+        url: "/products/piezas-de-santa-maria",
+        image: brickwall,
+        alt: "Icono de piezas de Santa María",
+        title: "Piezas de santa maría",
+        subtitle: "Fleje, tambor, bandera, abrazaderas y barra modulada."
+    },
+    {
+        url: "/products/alcayatas-para-hamaca",
+        image: hook,
+        alt: "Icono de alcayata",
+        title: "Alcayatas para hamaca",
+        subtitle: "Alcayata argolla, alcayata base lam., alcayata cajetín, ancla bronce y ancla argolla."
+    },
+    {
+        url: "/products/pasadores",
+        image: cylinder,
+        alt: "Icono de pasador",
+        title: "Pasadores",
+        subtitle: "Pasador cabilla, pasador Mauser, pasador porta candado, pasador embutir, pasador uña, entre otros."
+    },
+    {
+        url: "/products/manillas-y-asas",
+        image: doorhandle,
+        alt: "Icono de manilla y asa",
+        title: "Manillas y asas",
+        subtitle: "Manilla natural, manilla blanca, manilla negra y asas de distintos modelos."
+    },
+    {
+        url: "/products/articulos-de-fijacion",
+        image: presicion,
+        alt: "Icono de artículo de fijación",
+        title: "Artículos de fijación",
+        subtitle: "Ángulos de canto, empates para madera y escuadras planas."
+    },
+    {
+        url: "/products/arandelas",
+        image: washer,
+        alt: "Icono de arandela",
+        title: "Arandelas",
+        subtitle: "Arandelas planas hierro negro y hierro galvanizado."
+    }
+];
+
+---
+
+<Layout
+    title="Productos | Metalúrgicas Santos y Santos CA"
+    desc="Explora nuestro catálogo de productos de construcción y ferretería en Metalúrgicas Santos y Santos CA. Calidad y durabilidad garantizadas en Venezuela."
+>
+    <div>
+        <!-- Header -->
+        <Header
+            title="PRODUCTOS"
+            subtitle="Todos los artículos de construcción y ferretería para tu negocio."
+            bg={bg}
+            alt="Imagen atractiva que expone la definición de ubicación"
+        />
+
+        <!-- Content -->
+        <div class="flex flex-wrap my-10 mx-auto justify-center max-w-[1216px] gap-x-8 gap-y-12">
+            {
+                products.map( (product) => {
+                    return <ProductCard url={product.url} src={product.image} alt={product.alt} title={product.title} subtitle={product.subtitle}/>
+                } )
+            }            
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,192 @@
+---
+// Components
+import Image from "astro/components/Image.astro";
+import SocialIcon from "./SocialIcon.astro";
+
+// Assets
+import oldlogo from "../assets/logo/oldlogo.png";
+import down from "../assets/svg/down.svg";
+import hinge from "../assets/icons/hinge.png"
+import threadedbar from "../assets/icons/threaded_bars.png"
+import nuts from "../assets/icons/nuts.png"
+import clamp from "../assets/icons/clamp.png"
+import plate from "../assets/icons/plate.png"
+import electricalpanel from "../assets/icons/electrical-panel.png"
+import brickwall from "../assets/icons/brickwall.png"
+import hook from "../assets/icons/hook.png"
+import doorhandle from "../assets/icons/handle.png"
+import washer from "../assets/icons/washer.png"
+import presicion from "../assets/icons/presicion.png"
+import cylinder from "../assets/icons/cylinder.png"
+import bestseller from "../assets/icons/bestseller.png"
+import group from "../assets/icons/group.png"
+import menu from "../assets/icons/menu.png"
+import arrowright from "../assets/svg/arrow_right.svg"
+
+const links = [
+  {
+    title: "Inicio",
+    url: "/",
+    sub: [],
+  },
+  {
+    title: "Productos",
+    url: "/products",
+    sub: [
+      { subtitle: "Bisagras", icon: hinge, description: "Componentes mecánicos para el movimiento controlado de puertas y ventanas.", url: "/products/bisagras" },
+      { subtitle: "Barras roscadas", icon: threadedbar, description: "Ejes roscados ideales para uniones estructurales y sistemas de tensión.", url: "/products/barras-roscadas" },
+      { subtitle: "Tuercas", icon: nuts, description: "Elementos de fijación roscados compatibles con pernos y barras roscadas.", url: "/products/tuercas" },
+      { subtitle: "Abrazaderas", icon: clamp, description: "Sujetadores metálicos para tuberías, cables y otros sistemas de fijación.", url: "/products/abrazaderas" },
+      { subtitle: "Pletinas perforadas", icon: plate, description: "Láminas metálicas con perforaciones estándar para ensamblajes estructurales.", url: "/products/pletinas-perforadas" },
+      { subtitle: "Cajetines y tapas", icon: electricalpanel, description: "Cajas de protección para sistemas eléctricos y de cableado.", url: "/products/cajetines-y-tapas" },
+      { subtitle: "Piezas de Santa María", icon: brickwall, description: "Accesorios metálicos para sistemas de persianas enrollables y cerraduras.", url: "/products/piezas-de-santa-maria" },
+      { subtitle: "Alcayatas para hamaca", icon: hook, description: "Soportes metálicos diseñados para cargas suspendidas en estructuras fijas.", url: "/products/alcayatas-para-hamaca" },
+      { subtitle: "Pasadores", icon: cylinder, description: "Piezas de anclaje para ensamblajes mecánicos y estructuras móviles.", url: "/products/pasadores" },
+      { subtitle: "Manillas y asas", icon: doorhandle, description: "Dispositivos de apertura diseñados para puertas y muebles.", url: "/products/manillas-y-asas" },
+      { subtitle: "Artículos de fijación", icon: presicion, description: "Uniones y refuerzos para estructuras de madera y metal.", url: "/products/articulos-de-fijacion" },
+      { subtitle: "Arandelas", icon: washer, description: "Separadores y distribuidores de presión para sistemas de tornillería.", url: "/products/arandelas" },
+    ],
+  },
+  {
+    title: "Ubicación",
+    url: "/location",
+    sub: [],
+  },
+  {
+    title: "Contacto",
+    url: "/contact",
+    sub: [],
+  }
+];
+
+---
+<div class="flex items-center justify-between px-6 py-3 shadow-md">
+	<!-- Logo -->
+	<div class="mr-auto">
+		<Image src={oldlogo} alt="Logo de Metalúrgicas Santos y Santos CA" width={50} height={45} />
+	</div>
+
+	<!-- Mobile -->
+	<div class="lg:hidden" id="mobile_menu_button">
+		<SocialIcon src={menu} alt="Icono de menu"/>
+	</div>
+
+	<!-- Desktop -->
+	<div class="hidden absolute lg:inline-flex inset-x-0 justify-center">
+		<nav class="space-x-6">
+			<ul class=" gap-8 text-lg font-medium mx-auto lg:flex">
+				{
+					links.map((link) => {
+						let content = null;
+
+						if (link.sub.length == 0) {
+							content = <li class="cursor-pointer neutral-two-text hover:text-black flex align-middle"><a href={link.url} rel="noopener noreferrer">{link.title}</a></li>;
+						}
+						
+						if(link.sub.length >= 1 && link.sub.length <= 4){
+							content = 
+								<li class="relative group cursor-pointer neutral-two-text hover:text-black flex align-middle neutral-two-text">
+									<a href={link.url} rel="noopener noreferrer">
+										{link.title}
+									</a>
+									<Image class="inline-flex ml-1" src={down} alt="show more"/>
+
+									<div class="absolute -left-60 mt-10 flex flex-wrap bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-50">
+											<ul class="flex flex-wrap w-full m-4 gap-2">
+												{
+													link.sub.map((sublink) => {
+														return (
+															<li>
+																<a href={sublink.url} rel="noopener noreferrer" class="hover:bg-gray-100 w-[425px] px-3 py-2 rounded-md flex">
+																	<div class="p-2">
+																	<Image src={sublink.icon} alt="Icon reference" class="w-10 max-w-max h-auto"/>
+																</div>
+																<div>
+																	<strong class="primary-text size-s-5">{sublink.subtitle}</strong>
+																	<p class="size-s-6 neutral-two-text">
+																		{sublink.description}
+																	</p>
+																</div></a>
+															</li>
+														);
+													})
+												}
+											</ul>
+									</div>
+								</li>
+						}
+
+						if (link.sub.length > 4){
+							content = 
+								<li class="relative group cursor-pointer neutral-two-text hover:text-black flex align-middle neutral-two-text">
+									<a href={link.url} rel="noopener noreferrer">
+										{link.title}
+									</a>
+									<Image class="inline-flex ml-1" src={down} alt="show more"/>
+
+									<div class="absolute -left-60 mt-10 flex w-[890px] flex-wrap bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-50">
+											<ul class="flex flex-wrap w-full m-4 gap-2">
+												{
+													link.sub.map((sublink) => {
+														return (
+														<li>
+																<a href={sublink.url} rel="noopener noreferrer" class="hover:bg-gray-100 w-[425px] px-3 py-2 rounded-md flex">
+																	<div class="p-2">
+																	<Image src={sublink.icon} alt="Icon reference" class="w-10 max-w-max h-auto"/>
+																</div>
+																<div>
+																	<strong class="primary-text size-s-5">{sublink.subtitle}</strong>
+																	<p class="size-s-6 neutral-two-text">
+																		{sublink.description}
+																	</p>
+																</div></a>
+															</li>
+														);
+													})
+												}
+											</ul>
+									</div>
+								</li>
+						}
+
+						return <>{content}</>;
+					})
+				}
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!-- Mobile -->
+<div class="hidden lg:hidden neutral-bg" id="mobile_menu_content">
+	<ul class="flex flex-col list-disc">
+		{
+			links.map( (link) => {
+				return <>
+				<li>
+					<a href={link.url} rel="noopener noreferrer" class="cursor-pointer h-full items-center text-black flex align-middle ml-6 p-4 gap-2">
+						<SocialIcon src={arrowright} alt="Icono para mostrar la opción del menu" />
+						{link.title}
+					</a>
+				</li></>
+			})
+		}
+	</ul>
+</div>
+
+<script>
+	let button = document.getElementById("mobile_menu_button");
+	let content = document.getElementById("mobile_menu_content");
+	let active = false;
+
+	button.addEventListener("click", (e) => {
+		if (active) {
+			content.className = "hidden lg:hidden neutral-bg"		
+			active = false	
+		}else{
+			content.className = "lg:hidden neutral-bg"
+			active = true;
+		}
+
+	})
+</script>
