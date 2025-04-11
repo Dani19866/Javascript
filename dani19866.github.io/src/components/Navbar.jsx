@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className="font-[Manrope]">
+    <div>
       <div className='w-full py-2 px-5 shadow'>
         {/* Content */}
         <div className="flex justify-between items-center w-full">
