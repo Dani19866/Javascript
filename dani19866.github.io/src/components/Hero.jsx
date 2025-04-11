@@ -5,27 +5,21 @@ import HeroBackgroundText from "../assets/images/hero_background_text.svg"
 import download from "../assets/icons/download.svg"
 import contactme from "../assets/icons/contactme.svg"
 
-const boxStyle = {
-    "boxShadow": "2px 2px 20px 0px rgba(0, 0, 0, 0.25)"
-}
-
-// gap-y-10 mt-40
-
 export default function Hero() {
     return (
         <div>
 
             {/* Container flex */}
-            <div className="flex flex-row gap-4 py-5 px-10 md:h-full lg:h-[725px]">
+            <div className="flex flex-row gap-4 md:h-full lg:h-[725px]">
 
                 {/* Picture Hero*/}
-                <div className="w-[45%] rounded-2xl flex justify-center relative overflow-hidden" style={boxStyle}>
+                <div className="w-[45%] flex justify-center relative overflow-hidden boxShadow">
                     <img src={heroBackgroundPhoto} alt="" className='absolute w-full h-full opacity-65' />
                     <img src={photo} alt="" className="z-10 relative object-cover" />
                 </div>
 
                 {/* Text Hero */}
-                <div className="w-[55%] rounded-2xl flex items-center justify-center relative overflow-hidden" style={boxStyle}>
+                <div className="w-[55%] flex items-center justify-center relative overflow-hidden boxShadow">
 
                     {/* Background */}
                     <img src={HeroBackgroundText} alt="" className='absolute w-full h-full opacity-65 md:-top-28 lg:-top-14 xl:top-0' />

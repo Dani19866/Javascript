@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Card from "./components/Card"
 
 // Todo responsive desde md:[760px], lg:[1024px] y xl:[1280px]
 function App() {
@@ -7,7 +8,12 @@ function App() {
     <div className="font-[Manrope]">
       <div className="md:block hidden">
         <Navbar />
-        <Hero />
+
+        <div className="py-5 px-10 flex flex-col gap-4 ">
+          <Hero />
+          <Card />
+        </div>
+
       </div>
 
       <div className="w-full flex justify-center items-center">
