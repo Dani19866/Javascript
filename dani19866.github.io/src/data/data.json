@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "logo": "unimetLogo",
+        "title": "Universidad Metropolitana de Caracas",
+        "time": "2024 Sep - 2024 Dic",
+        "framework": "Scrum",
+        "responsibilities": "Base de datos y BackEnd (PHP/Laravel)",
+        "description": "Se creó un equipo de estudiantes con un preparador, el cual actuaba como Scrum Master. Se diseñó, desarrolló y testeó una solución que permite tomar la asistencia de los alumnos a través de una tarjeta con RFID; el alumno podía evaluar y comentar la clase la cual asistió a través de la aplicación móvil. El profesor podía ver los alumnos que asistieron, comentarios, evaluaciones y algunas otras estadísticas"
+    },
+    {
+        "id": 2,
+        "logo": "santosLogo",
+        "title": "Metalúrgicas Santos y Santos, C.A.",
+        "time": "2023 - Actualidad",
+        "framework": "OpenUP",
+        "responsibilities": "Gerente de IT",
+        "description": "Mi objetivo en esta empresa es impulsar las actividades económicas a través de la creación y uso de sistemas informáticos tales como ERP, CRM, Data Warehouse/Datamart, aplicación web y algunos servicios de AWS. Estos servicios trabajan en conjunto con estrategias las cuales permiten el análisis de datos para dar soporte a la toma de decisiones importantes."
+    }
+]
