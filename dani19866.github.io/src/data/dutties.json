@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "devLogo",
+        "title": "Desarrollador de aplicaciones web y móviles (FrontEnd/BackEnd)",
+        "description": "Ingeniería de requisitos (IEEE 830) | Patrones de arquitectura | Patrones de diseño | UML | Base de datos SQL | Base de datos NoSQL | AWS | FrontEnd: React-Astro | BackEnd: Laravel-Spring-FastAPI."
+    },
+    {
+        "id": 2,
+        "icon": "platformsLogo",
+        "title": "Ingeniería en plataformas (DevOps)",
+        "description": "Procesos de despliegue de aplicaciones | Pruebas de software (no funcionales) | Técnicas avanzadas de seguridad  | Gestión de desastres (Disaster Recovery) | Gestión y revisión de incidentes."
+    },
+    {
+        "id": 3,
+        "icon": "bigDataLogo",
+        "title": "Big Data y ciencia de datos (análisis de datos)",
+        "description": "Identificación de fuentes de datos | Ingesta de datos | ETL | Almacenamiento y arquitectura (DataWarehouse/Datamart-Datalake) de los datos | Análisis (SQL-Excel-Python) | Visualización de los datos."
+    },
+    {
+        "id": 4,
+        "icon": "serverLogo",
+        "title": "Administrador de servidores y redes",
+        "description": "Procesos básicos de instalación y configuración |  Configuración avanzada de Firewall | Gestión y revisión de incidentes | Análisis forense | Instalación y configuración de redes y archivos compartidos | Active Directory."
+    }
+]
