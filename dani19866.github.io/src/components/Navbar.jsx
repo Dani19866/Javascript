@@ -15,10 +15,9 @@ export default function Navbar() {
 
           {/* Buttons */}
           <div className="flex flex-row h-full gap-x-6 items-center justify-center">
-            <a className="uppercase hover:cursor-pointer hover:text-gray-500">Inicio</a>
-            <a className="uppercase hover:cursor-pointer hover:text-gray-500">Estudios</a>
-            <a className="uppercase hover:cursor-pointer hover:text-gray-500">Experiencia</a>
-            <a className="uppercase hover:cursor-pointer hover:text-gray-500">Proyectos</a>
+            <a href='#dutties' className="uppercase hover:cursor-pointer hover:text-gray-500">Servicios</a>
+            <a href='#experience' className="uppercase hover:cursor-pointer hover:text-gray-500">Experiencia</a>
+            <a href='#projects' className="uppercase hover:cursor-pointer hover:text-gray-500">Proyectos</a>
           </div>
 
         </div>

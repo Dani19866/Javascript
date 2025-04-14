@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from "../assets/images/photo.svg"
+import photo from "../assets/images/photo.png"
 import heroBackgroundPhoto from "../assets/images/hero_background_photo.svg"
 import HeroBackgroundText from "../assets/images/hero_background_text.svg"
 import download from "../assets/icons/download.svg"
@@ -43,11 +43,11 @@ export default function Hero() {
                         <div className='flex-row gap-5 flex'>
                             <button className='p-2 border border-black rounded-2xl font-semibold text-sm bg-black text-white flex flex-row justify-center items-center gap-2 hover:cursor-pointer'>
                                 <img src={download} alt="" />
-                                <span>Descargar CV</span>
+                                <a href="https://docs.google.com/document/d/1x8FFzH5Gfforw-_zITdCjgzUDjQWOii8HaseurX3u4I" target="_blank">Descargar CV</a>
                             </button>
                             <button className='p-2 border border-black rounded-2xl font-semibold text-sm flex flex-row justify-center items-center gap-2 hover:cursor-pointer'>
                                 <img src={contactme} alt="" />
-                                <span>Contactarme</span>
+                                <a href='mailto:deoliveiradaniel200@gmail.com'>Contactarme</a>
                             </button>
                         </div>
                     </div>

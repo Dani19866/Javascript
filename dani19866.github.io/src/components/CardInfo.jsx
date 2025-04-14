@@ -1,15 +1,15 @@
-import React from 'react'
-import devLogo from "../assets/icons/devLogo.svg"
-import platformsLogo from "../assets/icons/platformsLogo.svg"
-import bigDataLogo from "../assets/icons/bigDataLogo.svg"
-import serverLogo from "../assets/icons/serverLogo.svg"
+import React from 'react';
+import devLogo from "../assets/icons/devLogo.svg";
+import platformsLogo from "../assets/icons/platformsLogo.svg";
+import bigDataLogo from "../assets/icons/bigDataLogo.svg";
+import serverLogo from "../assets/icons/serverLogo.svg";
 
 const icons = {
   devLogo: devLogo,
   platformsLogo: platformsLogo,
   bigDataLogo: bigDataLogo,
   serverLogo: serverLogo
-}
+};
 
 export default function CardInfo({ duty }) {
   return (
@@ -22,8 +22,16 @@ export default function CardInfo({ duty }) {
       {/* Text */}
       <div className='flex flex-col gap-y-2 w-full'>
         <h3 className='font-extrabold text-lg'>{duty.title}</h3>
-        <p className='h-full text-base'>{duty.description}</p>
+        <p className='h-full text-base'>
+          {duty.description.map((part, index) => (
+            part.bold ? (
+              <strong key={index}>{part.text}</strong>
+            ) : (
+              <span key={index}>{part.text}</span>
+            )
+          ))}
+        </p>
       </div>
     </div>
-  )
+  );
 }

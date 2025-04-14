@@ -3,24 +3,83 @@
         "id": 1,
         "icon": "devLogo",
         "title": "Desarrollador de aplicaciones web y móviles (FrontEnd/BackEnd)",
-        "description": "Ingeniería de requisitos (IEEE 830) | Patrones de arquitectura | Patrones de diseño | UML | Base de datos SQL | Base de datos NoSQL | AWS | FrontEnd: React-Astro | BackEnd: Laravel-Spring-FastAPI."
+        "description": [
+            {"text": "Ingeniería de ", "bold": false},
+            {"text": "requisitos", "bold": true},
+            {"text": " (IEEE 830) | Patrones de ", "bold": false},
+            {"text": "arquitectura", "bold": true},
+            {"text": " | Patrones de ", "bold": false},
+            {"text": "diseño", "bold": true},
+            {"text": " | UML | Base de datos ", "bold": false},
+            {"text": "SQL", "bold": true},
+            {"text": " | Base de datos ", "bold": false},
+            {"text": "NoSQL", "bold": true},
+            {"text": " | AWS | ", "bold": false},
+            {"text": "FrontEnd", "bold": true},
+            {"text": ": React-Astro | ", "bold": false},
+            {"text": "BackEnd", "bold": true},
+            {"text": ": Laravel-Spring-FastAPI.", "bold": false}
+        ]
     },
     {
         "id": 2,
         "icon": "platformsLogo",
         "title": "Ingeniería en plataformas (DevOps)",
-        "description": "Procesos de despliegue de aplicaciones | Pruebas de software (no funcionales) | Técnicas avanzadas de seguridad  | Gestión de desastres (Disaster Recovery) | Gestión y revisión de incidentes."
+        "description": [
+            {"text": "Procesos de ", "bold": false},
+            {"text": "despliegue", "bold": true},
+            {"text": " de aplicaciones | Pruebas de ", "bold": false},
+            {"text": "software", "bold": true},
+            {"text": " (no funcionales) | Técnicas avanzadas de ", "bold": false},
+            {"text": "seguridad", "bold": true},
+            {"text": " | Gestión de ", "bold": false},
+            {"text": "desastres", "bold": true},
+            {"text": " (Disaster Recovery) | Gestión y revisión de ", "bold": false},
+            {"text": "incidentes", "bold": true},
+            {"text": ".", "bold": false}
+        ]
     },
     {
         "id": 3,
         "icon": "bigDataLogo",
         "title": "Big Data y ciencia de datos (análisis de datos)",
-        "description": "Identificación de fuentes de datos | Ingesta de datos | ETL | Almacenamiento y arquitectura (DataWarehouse/Datamart-Datalake) de los datos | Análisis (SQL-Excel-Python) | Visualización de los datos."
+        "description": [
+            {"text": "Identificación de ", "bold": false},
+            {"text": "fuentes", "bold": true},
+            {"text": " de datos | ", "bold": false},
+            {"text": "ingesta", "bold": true},
+            {"text": " de datos | ", "bold": false},
+            {"text": "ETL", "bold": true},
+            {"text": " | ", "bold": false},
+            {"text": "Almacenamiento", "bold": true},
+            {"text": " y ", "bold": false},
+            {"text": "arquitectura", "bold": true},
+            {"text": " (DataWarehouse/Datamart-Datalake) de los datos | ", "bold": false},
+            {"text": "Análisis", "bold": true},
+            {"text": " (SQL-Excel-Python) | ", "bold": false},
+            {"text": "Visualización", "bold": true},
+            {"text": " de los datos.", "bold": false}
+        ]
     },
     {
         "id": 4,
         "icon": "serverLogo",
         "title": "Administrador de servidores y redes",
-        "description": "Procesos básicos de instalación y configuración |  Configuración avanzada de Firewall | Gestión y revisión de incidentes | Análisis forense | Instalación y configuración de redes y archivos compartidos | Active Directory."
+        "description": [
+            {"text": "Procesos básicos", "bold": true},
+            {"text": " de instalación y configuración | Configuración avanzada de ", "bold": false},
+            {"text": "Firewall", "bold": true},
+            {"text": " | Gestión y revisión de ", "bold": false},
+            {"text": "incidentes", "bold": true},
+            {"text": " | Análisis ", "bold": false},
+            {"text": "forense", "bold": true},
+            {"text": " | Instalación y configuración de ", "bold": false},
+            {"text": "redes", "bold": true},
+            {"text": " y ", "bold": false},
+            {"text": "archivos", "bold": true},
+            {"text": " compartidos | ", "bold": false},
+            {"text": "Active Directory", "bold": true},
+            {"text": ".", "bold": false}
+        ]
     }
 ]

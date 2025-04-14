@@ -1,0 +1,34 @@
+[
+    {
+        "img": "menuImg",
+        "subtitle": "Aplicación Desktop",
+        "title": "Menu interactivo",
+        "desc": "Este proyecto es un CRUD en Python el cual tiene incorporada funciones con los paquetes requests y os. Esta aplicación es capaz de tolerar la mayoría de los errores.",
+        "tags": ["Python", "Requests", "Archivos", "JSON", "App"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/simple_menu_management_01-2023"
+    },
+    {
+        "img": "menu2Img",
+        "subtitle": "Aplicación Desktop",
+        "title": "Menu interactivo",
+        "desc": "Este proyecto es un CRUD en Python el cual tiene incorporada funciones con los paquetes requests, os y matplotlib. Es una versión mejorada del anterior proyecto ya que me pagaron.",
+        "tags": ["Python", "Requests", "Archivos", "JSON", "Matplotlib", "App"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/simple_menu_management_03-2023"
+    },
+    {
+        "img": "scriptImg",
+        "subtitle": "Herramienta",
+        "title": "Script para pentesting",
+        "desc": "Este script contiene multiples funciones y características automáticas para la seguridad y el análisis WEB y WPA. Contiene ataques automáticos de fuerza bruta, inyección SQL, scraping web, etc.",
+        "tags": ["Seguridad", "Python", "SQLi", "Scraping", "WPA", "Pentesting", "Herramienta"],
+        "git_link": "https://github.com/Dani19866/Python/tree/main/sqli_script"
+    },
+    {
+        "img": "laravelImg",
+        "subtitle": "Aplicación móvil",
+        "title": "Aplicación WEB para la Universidad",
+        "desc": "Esta aplicación se encarga de gestionar de forma automática las asistencias de los estudiantes de la UNIMET. Todo mediante una aplicación creada en Laravel, un dispositivo arduino y un servidor.",
+        "tags": ["PHP", "Laravel", "Arduino", "RFID", "Testing", "PostgreSQL"],
+        "git_link": "https://github.com/Dani19866/PHP/tree/main/SAEC"
+    }
+]
