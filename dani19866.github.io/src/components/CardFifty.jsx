@@ -16,7 +16,7 @@ export default function CardFifty({ className, cardData }) {
             <div className='relative flex flex-col justify-center gap-4 h-full p-4 z-10'>
                 <img src={logos[cardData.logo]}  alt="" srcset="" className="object-contain h-[95px] w-fit" />
                 <h2 className='text-3xl font-medium'>{cardData.title}</h2>
-                <div className='flex flex-col gap-y-2'>
+                <div className='flex flex-col gap-y-2 lg:text-lg'>
                     {/* Tiempo */}
                     <div>
                         <p>

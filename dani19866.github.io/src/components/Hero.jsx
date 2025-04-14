@@ -25,10 +25,10 @@ export default function Hero() {
                     <img src={HeroBackgroundText} alt="" className='absolute w-full h-full opacity-65 md:-top-28 lg:-top-14 xl:top-0' />
 
                     {/* Text */}
-                    <div className='w-[658px] xl:w-[700px] flex flex-col z-10 relative xl:gap-y-10 md:p-10 md:gap-y-5 lg:mt-28'>
+                    <div className='w-[658px] xl:w-[800px] flex flex-col z-10 relative xl:gap-y-10 md:p-10 md:gap-y-5 lg:mt-28'>
                         
                         {/* Title */}
-                        <h1 className="font-bold lg:text-6xl lg:font-bold md:text-5xl md:font-extrabold">Lleva tu empresa al otro nivel con personal capacitado</h1>
+                        <h1 className="font-bold lg:text-7xl lg:font-bold md:text-5xl md:font-extrabold">Lleva tu empresa al otro nivel con personal capacitado</h1>
 
                         {/* Paragraph */}
                         <p className="leading-6"> Soy Daniel De Oliveira y estoy cursando mis últimos trimestres
