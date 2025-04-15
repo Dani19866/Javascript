@@ -69,7 +69,7 @@ export default function CardProject({ project }) {
     };
 
     return (
-        <div className="h-[540px] w-[300px] bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+        <div className="h-[575px] w-[300px] bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
             {/* Image Container - Fixed Height */}
             <div className='h-[220px] w-full overflow-hidden'>
                 <img 
