@@ -37,7 +37,7 @@ function App() {
           }
         </Card>
         <Card id="experience" title="Experiencia" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
-          <div className="flex flex-row gap-x-6 xl:gap-x-16">
+          <div className="flex flex-col md:flex-row gap-y-5 gap-x-6 xl:gap-x-16">
             {
               experiences.map((experience) => (
                 <CardExperience
