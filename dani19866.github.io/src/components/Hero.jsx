@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row gap-4 h-full lg:h-[725px]">
 
                 {/* Picture Hero*/}
-                <div className="w-full md:w-[45%] flex justify-center relative overflow-hidden boxShadow">
+                <div className="hidden md:w-[45%] md:flex justify-center relative overflow-hidden boxShadow">
                     <img src={heroBackgroundPhoto} alt="" className='absolute w-full h-full opacity-65' />
                     <img src={photo} alt="" className="z-10 relative object-cover object-center" />
                 </div>

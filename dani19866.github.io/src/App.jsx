@@ -17,13 +17,14 @@ import experiences from "./data/experience.json"
 import projects from "./data/projects.json"
 import projects2 from "./data/projects2.json"
 
-// Mobile: py-7 px-5 | 
+// Mobile: py-7 px-5
+// Titles full responsive: text-4xl md:text-5xl lg:text-6xl
 function App() {
   return (
     <div className="font-[Manrope]">
       <Navbar />
 
-      <div className="py-5 px-10 flex flex-col gap-4" id="home">
+      <div className="py-2.5 px-5 md:py-5 md:px-10 flex flex-col gap-4" id="home">
         <Hero />
         <Card id="dutties" title="¿Qué puedo ofrecerle a tu empresa?" classNameTitle="text-center" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
           {
