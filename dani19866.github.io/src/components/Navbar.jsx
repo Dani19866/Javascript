@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navbar() {
   return (
     <div>
-      <div className='w-full py-2 px-5 shadow'>
+      <div className='w-full py-2 px-5 shadow hidden sm:block'>
         {/* Content */}
         <div className="flex justify-between items-center w-full">
 

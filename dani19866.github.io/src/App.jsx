@@ -17,7 +17,7 @@ import experiences from "./data/experience.json"
 import projects from "./data/projects.json"
 import projects2 from "./data/projects2.json"
 
-// Todo responsive desde md:[760px], lg:[1024px] y xl:[1280px]
+// Mobile: py-7 px-5 | 
 function App() {
   return (
     <div className="font-[Manrope]">
