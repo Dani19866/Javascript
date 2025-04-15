@@ -24,9 +24,9 @@ function App() {
     <div className="font-[Manrope]">
       <Navbar />
 
-      <div className="py-2.5 px-5 md:py-5 md:px-10 flex flex-col gap-4" id="home">
+      <div className="py-2.5 pt-20 px-5 md:py-5 md:pt-20 md:px-10 flex flex-col gap-4" id="home">
         <Hero />
-        <Card id="dutties" title="¿Qué puedo ofrecerle a tu empresa?" classNameTitle="text-center" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
+        <Card id="servicios" title="¿Qué puedo ofrecerle a tu empresa?" classNameTitle="text-center" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
           {
             dutties.map((duty) => (
               <CardInfo
@@ -36,7 +36,7 @@ function App() {
             ))
           }
         </Card>
-        <Card id="experience" title="Experiencia" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
+        <Card id="experiencia" title="Experiencia" className='p-4 flex flex-col gap-y-12 justify-center items-center pb-10'>
           <div className="flex flex-col md:flex-row gap-y-5 gap-x-6 xl:gap-x-16">
             {
               experiences.map((experience) => (
@@ -48,7 +48,7 @@ function App() {
             }
           </div>
         </Card>
-        <Card id="projects" title="Proyectos" className="p-4 flex flex-col gap-y-3 justify-center items-center pb-10">
+        <Card id="proyectos" title="Proyectos" className="p-4 flex flex-col gap-y-3 justify-center items-center pb-10">
           <div className="flex flex-row gap-3 flex-wrap w-full justify-center items-center mt-5">
             {
               projects.map((project, index) => (

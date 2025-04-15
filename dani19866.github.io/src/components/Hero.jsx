@@ -47,10 +47,6 @@ export default function Hero() {
                                 <img src={download} alt="" />
                                 <a href="https://docs.google.com/document/d/1x8FFzH5Gfforw-_zITdCjgzUDjQWOii8HaseurX3u4I" target="_blank">Descargar CV</a>
                             </button>
-                            <button className='p-2 border border-black rounded-2xl font-semibold text-sm flex flex-row justify-center items-center gap-2 hover:cursor-pointer'>
-                                <img src={contactme} alt="" />
-                                <a href='mailto:deoliveiradaniel200@gmail.com'>Contactarme</a>
-                            </button>
                         </div>
                     </div>
 
