@@ -13,21 +13,25 @@ const icons = {
 
 export default function CardInfo({ duty }) {
   return (
-    <div className='flex flex-row gap-3.5 boxShadow w-full h-fit max-w-[975px] p-5'>
-      {/* SVG */}
-      <div className="w-[104px] h-[92px] flex justify-center items-center">
-        <img src={icons[duty.icon]} alt="" />
+    <div className='flex flex-row gap-6 w-full max-w-[975px] p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 relative z-10 pointer-events-auto'>
+      {/* SVG Container */}
+      <div className="flex-shrink-0 w-20 h-20 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50 flex justify-center items-center p-4 pointer-events-auto">
+        <img 
+          src={icons[duty.icon]} 
+          alt={duty.title} 
+          className="w-full h-full object-contain pointer-events-auto"
+        />
       </div>
 
-      {/* Text */}
-      <div className='flex flex-col gap-y-2 w-full'>
-        <h3 className='font-extrabold text-lg'>{duty.title}</h3>
-        <p className='h-full text-base'>
+      {/* Text Content */}
+      <div className='flex flex-col gap-y-3 flex-1 pointer-events-auto'>
+        <h3 className='font-bold text-xl text-gray-800'>{duty.title}</h3>
+        <p className='text-gray-600 leading-relaxed pointer-events-auto'>
           {duty.description.map((part, index) => (
             part.bold ? (
-              <strong key={index}>{part.text}</strong>
+              <strong key={index} className="text-blue-600 pointer-events-auto">{part.text}</strong>
             ) : (
-              <span key={index}>{part.text}</span>
+              <span key={index} className="pointer-events-auto">{part.text}</span>
             )
           ))}
         </p>

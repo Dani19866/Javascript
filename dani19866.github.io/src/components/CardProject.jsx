@@ -1,12 +1,13 @@
 import React from 'react';
-import blackjackImg from "../assets/images/blackjack.jpg"
-import universityImg from "../assets/images/university.png"
-import bingoImg from "../assets/images/bingo.png"
-import graphImg from "../assets/images/graph.png"
-import menuImg from "../assets/images/menu1.png"
-import menu2Img from "../assets/images/menu2.png"
-import scriptImg from "../assets/images/pentesting.jpg"
-import laravelImg from "../assets/images/laravel.png"
+import { FiGithub } from 'react-icons/fi';
+import blackjackImg from "../assets/images/blackjack.jpg";
+import universityImg from "../assets/images/university.png";
+import bingoImg from "../assets/images/bingo.png";
+import graphImg from "../assets/images/graph.png";
+import menuImg from "../assets/images/menu1.png";
+import menu2Img from "../assets/images/menu2.png";
+import scriptImg from "../assets/images/pentesting.jpg";
+import laravelImg from "../assets/images/laravel.png";
 
 const images = {
     blackjackImg: blackjackImg,
@@ -20,63 +21,104 @@ const images = {
 }
 
 export default function CardProject({ project }) {
-    const getRandomColor = () => {
-        const colors = [
-            'bg-red-200', 'bg-blue-200', 'bg-green-200', 'bg-yellow-200', 'bg-indigo-200', 'bg-purple-200', 'bg-pink-200',
-            'bg-teal-200', 'bg-orange-200', 'bg-lime-200', 'bg-cyan-200', 'bg-fuchsia-200', 'bg-amber-200', 'bg-emerald-200',
-            'bg-gray-200', 'bg-gray-200', 'bg-gray-200', 'bg-red-300', 'bg-blue-300',
-            'bg-green-300', 'bg-yellow-300', 'bg-indigo-300', 'bg-purple-300', 'bg-pink-300', 'bg-teal-300', 'bg-orange-300',
-            'bg-lime-300', 'bg-cyan-300', 'bg-fuchsia-300', 'bg-amber-300', 'bg-emerald-300', 'bg-gray-300',
-        ];
+    const tagColors = {
+        // Lenguajes
+        'JAVA': 'bg-blue-100 text-blue-800',
+        'Python': 'bg-amber-100 text-amber-800',
+        'JavaScript': 'bg-yellow-100 text-yellow-800',
+        'PHP': 'bg-fuchsia-100 text-fuchsia-800',
+        'CSS': 'bg-blue-100 text-blue-800',
+        
+        // Frameworks/Librerías
+        'Swing': 'bg-purple-100 text-purple-800',
+        'React': 'bg-cyan-100 text-cyan-800',
+        'Laravel': 'bg-red-100 text-red-800',
+        'Tailwind': 'bg-teal-100 text-teal-800',
+        'JUnit': 'bg-indigo-100 text-indigo-800',
+        'Matplotlib': 'bg-green-100 text-green-800',
+        
+        // Tecnologías/Herramientas
+        'Firebase': 'bg-orange-100 text-orange-800',
+        'Arduino': 'bg-gray-100 text-gray-800',
+        'RFID': 'bg-amber-100 text-amber-800',
+        'PostgreSQL': 'bg-violet-100 text-violet-800',
+        'Requests': 'bg-emerald-100 text-emerald-800',
+        
+        // Conceptos
+        'UI/UX': 'bg-pink-100 text-pink-800',
+        'Testing': 'bg-lime-100 text-lime-800',
+        'Estructura': 'bg-rose-100 text-rose-800',
+        'Seguridad': 'bg-red-100 text-red-800',
+        'Pentesting': 'bg-rose-100 text-rose-800',
+        'SQLi': 'bg-orange-100 text-orange-800',
+        'Scraping': 'bg-indigo-100 text-indigo-800',
+        'WPA': 'bg-blue-100 text-blue-800',
+        
+        // Tipos de proyecto
+        'Juego': 'bg-green-100 text-green-800',
+        'App': 'bg-emerald-100 text-emerald-800',
+        'Herramienta': 'bg-purple-100 text-purple-800',
+        
+        // Otros
+        'Archivos': 'bg-gray-100 text-gray-800',
+        'JSON': 'bg-yellow-100 text-yellow-800',
+    };
 
-        const randomIndex = Math.floor(Math.random() * colors.length);
-        return colors[randomIndex];
+    const getTagColor = (tag) => {
+        return tagColors[tag] || 'bg-gray-100 text-gray-800';
     };
 
     return (
-        <div className="h-[540px] w-[300px] bg-white rounded-md shadow-lg relative">
-            {/* Image */}
-            <div className='w-full bg-slate-300 h-[220px] rounded-t-md'>
-                <img src={images[project.img]} className="object-cover object-center w-[340px] h-full" />
+        <div className="h-[540px] w-[300px] bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            {/* Image Container - Fixed Height */}
+            <div className='h-[220px] w-full overflow-hidden'>
+                <img 
+                    src={images[project.img]} 
+                    alt={project.title}
+                    className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" 
+                />
             </div>
 
-            {/* Content */}
-            <div className='mt-1 p-3 leading-7'>
-                <div>
-                    <span className='text-sm font-medium text-[#17429D]'>
+            {/* Content Container - Flex Grow for Fixed Card Height */}
+            <div className='p-5 flex-1 flex flex-col'>
+                {/* Text Content */}
+                <div className='flex-1'>
+                    <span className='text-sm font-medium text-blue-600'>
                         {project.subtitle}
                     </span>
 
-                    <h4 className="font-semibold text-lg">
+                    <h4 className="font-bold text-xl mt-1 text-gray-800">
                         {project.title}
                     </h4>
 
-                    <p className='mt-1 text-sm'>
+                    <p className='mt-3 text-gray-600 text-sm leading-relaxed line-clamp-4'>
                         {project.desc}
                     </p>
                 </div>
 
                 {/* Tags */}
-                <div className='mt-2 flex flex-row flex-wrap gap-2 justify-center text-xs'>
-                    {
-                        project.tags.map((data, index) => (
-                            <div
-                                key={index}
-                                className={`px-2 py-1 ${getRandomColor()} inline-block rounded-lg`}
-                            >
-                                {data}
-                            </div>
-                        ))
-                    }
+                <div className='mt-4 flex flex-wrap gap-2'>
+                    {project.tags.map((tag, index) => (
+                        <span
+                            key={index}
+                            className={`px-2 py-1 rounded-full text-xs font-medium ${getTagColor(tag)}`}
+                        >
+                            {tag}
+                        </span>
+                    ))}
                 </div>
 
-                {/* Button */}
-                <div className='absolute bottom-3 right-3'>
-                    <div>
-                        <a href={project.git_link} target="_blank" className="hover:bg-[#ffed47] border border-[#d7c943] px-10 rounded-md py-1 font-semibold hover:cursor-pointer">
-                            Ver git
-                        </a>
-                    </div>
+                {/* Button - Fixed at Bottom Right */}
+                <div className='mt-4 flex justify-end'>
+                    <a 
+                        href={project.git_link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 text-sm font-semibold"
+                    >
+                        <FiGithub className="text-sm" />
+                        Ver código
+                    </a>
                 </div>
             </div>
         </div>
