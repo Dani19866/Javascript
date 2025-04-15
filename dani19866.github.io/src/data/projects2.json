@@ -24,11 +24,11 @@
         "git_link": "https://github.com/Dani19866/Python/tree/main/sqli_script"
     },
     {
-        "img": "laravelImg",
-        "subtitle": "Aplicación móvil",
-        "title": "Aplicación WEB para la Universidad",
-        "desc": "Esta aplicación se encarga de gestionar de forma automática las asistencias de los estudiantes de la UNIMET. Todo mediante una aplicación creada en Laravel, un dispositivo arduino y un servidor.",
-        "tags": ["PHP", "Laravel", "Arduino", "RFID", "Testing", "PostgreSQL"],
-        "git_link": "https://github.com/Dani19866/PHP/tree/main/SAEC"
+        "img": "bingoImg",
+        "subtitle": "Juego",
+        "title": "Bingo multijugador",
+        "desc": "Esto fue un microproyecto que hice cuando cursé la materia de sistemas de información. Contiene funciones de localstorage, contador de puntos, multijugador, etc.",
+        "tags": ["Juego", "JavaScript", "UI/UX", "CSS"],
+        "git_link": "https://github.com/Dani19866/MICROPROYECTO-01/tree/main"
     }
 ]
