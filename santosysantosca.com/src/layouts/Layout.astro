@@ -27,24 +27,45 @@ const { title, desc } = Astro.props;
 		<!-- CDN -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- Prefetch -->
 		<link rel="prefetch" href="/products" />
 		<link rel="prefetch" href="/contact" />
 		<link rel="prefetch" href="/location" />
 
-		<!-- Google Search Console -->
-		
+		<!-- Metricool -->
+		<script>
+			function loadScript(a) {
+				var b = document.getElementsByTagName("head")[0],
+					c = document.createElement("script");
+				(c.type = "text/javascript"),
+					(c.src = "https://tracker.metricool.com/resources/be.js"),
+					(c.onreadystatechange = a),
+					(c.onload = a),
+					b.appendChild(c);
+			}
+			loadScript(function () {
+				beTracker.t({ hash: "1a12971d787f0cf327a35f837ec2f271" });
+			});
+		</script>
 
 		<!-- Google analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-68NME2GXHL"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-68NME2GXHL"
+		></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-		gtag('config', 'G-68NME2GXHL');
+			gtag("config", "G-68NME2GXHL");
 		</script>
 	</head>
 
@@ -53,5 +74,4 @@ const { title, desc } = Astro.props;
 		<slot />
 		<Footer />
 	</body>
-	
 </html>
